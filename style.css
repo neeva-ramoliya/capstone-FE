@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+}
+
+.app-container {
+    width: 100%;
+    margin: auto;
+    font-family: monospace;
+}
+
+.app-container .title {
+    background-color: #323754;
+    height: 50px;
+    padding: 5px;
+}
+
+.app-container .title .app-title {
+    text-align: center;
+    color: white;
+    line-height: 36px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.custom-file-input {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    margin: 0;
+    opacity: 0;
+}
+
+.timer-container {
+    margin: auto;
+    font-weight: bold;
+}
+
+.custom-file-label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+.custom-file-label::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    display: block;
+    height: calc(1.5em + .75rem);
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    color: #495057;
+    content: "Browse";
+    background-color: #e9ecef;
+    border-left: inherit;
+    border-radius: 0 .25rem .25rem 0
+}
+
+.custom-file-input:lang(en)~.custom-file-label::after {
+    content: "Browse";
+}
+
+.btn-submit {
+    margin-top: 12px;
+}
+
+.input-group {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100%;
+}
+
+.custom-file {
+    position: relative;
+    flex: 1 1 auto;
+    width: 1%;
+    min-width: 0;
+    margin-bottom: 0;
+    height: calc(1.5em + .75rem + 2px);
+    align-items: center;
+    display: flex;
+}
+
+.output-panel {
+    width: 100%;
+    margin: 20px;
+}
+
+.output-panel .flex-container {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.output-panel video{
+    width: 270px;
+    height: 300px;
+    object-fit: none;
+}
+
+.output-panel .reba-score {
+    margin-top: 20px;
+}
+
+.output-panel .reba-score .sub-title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    margin: 10px 0
+}
+
+.output-panel .reba-score .desc {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
